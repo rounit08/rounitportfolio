@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&family=Sedgwick+Ave+Display&display=swap");
+
+* {
+  padding: 0;
+  background-color: #1d2024;
+  margin: 0;
+}
+.home {
+  background-color: #1d2024;
+  color: white;
+  height: 83vh;
+  font-family: "Kanit", sans-serif;
+}
+
+.homeTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Sedgwick Ave Display", serif;
+  font-size: 4rem;
+  height: 92px;
+  margin-top: 20px;
+}
+
+.homeSearch {
+  width: 500px;
+  height: 45px;
+  border: none;
+  padding-left: 1vw;
+  font-size: 1.5rem;
+}
+.homeSearch:focus {
+  outline: none;
+}
+
+.search > input {
+  color: white;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  width: 600px;
+  border-radius: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.homeButton > button {
+  margin-top: 20px;
+  background-color: #303134;
+  color: #e8eaed;
+  border: none;
+  width: 150px;
+  height: 45px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.homeButton > button:hover {
+  border: #e8eaed 1px solid;
+}
+
+.homeContact {
+  color: #e8eaed;
+}
+.homeContact > a {
+  margin-left: 5px;
+  font-weight: 300;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.8rem;
+  color: rgb(92, 92, 222);
+}
