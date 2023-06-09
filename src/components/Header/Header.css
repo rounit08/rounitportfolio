@@ -32,3 +32,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/*  mobile  */
+@media (max-width: 767px) {
+  .headerList {
+    margin-left: 510px;
+  }
+}
+/* laptop  */
+@media (min-width: 768px) {
+  /* Styles for tablets and larger screens */
+  /* ... */
+}

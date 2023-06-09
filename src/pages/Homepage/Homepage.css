@@ -49,6 +49,33 @@
   align-items: center;
 }
 
+.search:focus {
+  width: 600px;
+  height: 800px;
+}
+
+.search-button {
+  width: 150px;
+  height: 45px;
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #303134;
+  border: none;
+  margin: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #e8eaed;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Kanit", sans-serif;
+}
+
+.search-button:hover {
+  border: #e8eaed 1px solid;
+}
+
 .icon {
   margin-left: 10px;
 }
@@ -84,4 +111,59 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 0.8rem;
   color: rgb(92, 92, 222);
+}
+
+/*    mobile  */
+@media (max-width: 767px) {
+  .homeTitle {
+    font-size: 60px;
+    margin-left: 180px;
+    margin-top: 50px;
+  }
+  .search {
+    width: 400px;
+    margin-left: 130px;
+  }
+  .icon {
+    display: none;
+    visibility: hidden;
+  }
+
+  .homeButton {
+    margin-left: 180px;
+    display: flex;
+  }
+
+  .homeContact {
+    margin-left: 150px;
+  }
+  .search > input {
+    width: 350px;
+  }
+  .searchResults {
+    display: flex;
+    flex-direction: column;
+    margin-left: 230px;
+    background-color: transparent;
+  }
+  .homeSearch {
+    margin-left: 150px;
+    background-color: transparent;
+  }
+
+  .expandeditems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 70em;
+    margin-left: 10px;
+    background-color: transparent;
+  }
+}
+
+/*      laptop screens */
+@media (min-width: 768px) {
+  /* Styles for tablets and larger screens */
+  /* ... */
 }

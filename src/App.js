@@ -3,6 +3,9 @@ import AnimatedCursor from "react-animated-cursor";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Homepage from "./pages/Homepage/Homepage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Experiencepage from "./pages/Allpage/Experiencepage/Experiencepage";
+import Projectspage from "./pages/Allpage/ProjectsPage/Projectspage";
 
 function App() {
   return (
@@ -29,9 +32,16 @@ function App() {
         ]}
       />
 
-      <Header />
-      <Homepage />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/experience" Component={Experiencepage} />
+
+          <Route path="/projects" Component={Projectspage} />
+          <Route exact path="/" Component={Homepage} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
