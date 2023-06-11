@@ -10,7 +10,7 @@ const Homepage = () => {
 
   const handleClickResume = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1Fyoh3Kz3hVM4m_1VHNBIyvq4D3FlJahq/view?usp=sharing";
+      "https://drive.google.com/file/d/1H3qQmHTQeXHKAotoIwJYCWgVOsExdMaa/view?usp=sharing";
   };
 
   const handleClickLinkedIn = () => {
