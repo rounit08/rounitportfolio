@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  background-color: #1d2024;
 }
 
 body::-webkit-scrollbar {
@@ -18,8 +19,8 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Color of the scrollbar thumb on hover */
 }
 
-@media (max-width: 767px) {
+/* @media (min-width: 767px) {
   .projectComps {
     margin-left: 200px;
   }
-}
+} */

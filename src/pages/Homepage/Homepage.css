@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&family=Sedgwick+Ave+Display&display=swap");
 
-* {
-  padding: 0;
-  background-color: #1d2024;
-  margin: 0;
-}
 .home {
   background-color: #1d2024;
   color: white;
-  height: 83vh;
+  height: calc(100vh - 41px);
+  display: flex;
   font-family: "Kanit", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .homeTitle {
@@ -19,14 +19,14 @@
   font-family: "Sedgwick Ave Display", serif;
   font-size: 4rem;
   height: 92px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .homeSearch {
-  width: 500px;
-  height: 45px;
+  /* width: 500px;
+  height: 45px; */
   border: none;
-  padding-left: 1vw;
+  background-color: yellow;
   font-size: 1.5rem;
 }
 .homeSearch:focus {
@@ -38,17 +38,18 @@
 }
 
 .search {
-  display: flex;
-  justify-content: center;
-  border: 1px solid white;
-  width: 600px;
-  border-radius: 50px;
-
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+  position: relative;
 }
 
+.home__input {
+  background-color: transparent;
+  border: none;
+  border: 1px solid #e8eaed;
+  border-radius: 20px;
+  padding: 10px;
+  text-indent: 25px;
+  width: 75vw;
+}
 .search:focus {
   width: 600px;
   height: 800px;
@@ -77,7 +78,9 @@
 }
 
 .icon {
-  margin-left: 10px;
+  position: absolute;
+  top: 7px;
+  left: 11px;
 }
 
 .homeButton > button {
@@ -113,57 +116,13 @@
   color: rgb(92, 92, 222);
 }
 
-/*    mobile  */
-@media (max-width: 767px) {
-  .homeTitle {
-    font-size: 60px;
-    margin-left: 180px;
-    margin-top: 50px;
-  }
-  .search {
-    width: 400px;
-    margin-left: 130px;
-  }
-  .icon {
-    display: none;
-    visibility: hidden;
-  }
-
-  .homeButton {
-    margin-left: 180px;
-    display: flex;
-  }
-
-  .homeContact {
-    margin-left: 150px;
-  }
-  .search > input {
-    width: 350px;
-  }
-  .searchResults {
-    display: flex;
-    flex-direction: column;
-    margin-left: 230px;
-    background-color: transparent;
-  }
-  .homeSearch {
-    margin-left: 150px;
-    background-color: transparent;
-  }
-
-  .expandeditems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    width: 70em;
-    margin-left: 10px;
-    background-color: transparent;
-  }
+.searchResults {
+  display: flex;
+  flex-direction: column;
 }
 
-/*      laptop screens */
 @media (min-width: 768px) {
-  /* Styles for tablets and larger screens */
-  /* ... */
+  .home__input {
+    width: 40vw;
+  }
 }

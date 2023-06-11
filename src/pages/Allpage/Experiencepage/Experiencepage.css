@@ -1,17 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .timeline {
-  background: var(--primary-color);
-  margin: 20px auto;
-  padding: 20px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #1d2024;
 }
-
+.outer {
+  /* margin-left: 20vw; */
+  align-items: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 .cardss {
   position: relative;
   max-width: 400px;
@@ -71,7 +68,7 @@
 }
 
 .title {
-  color: orangered;
+  color: rgb(122, 122, 255);
   position: relative;
   background-color: transparent;
   margin-bottom: 8px;
@@ -84,7 +81,7 @@
   height: 10px;
   background: white;
   border-radius: 999px;
-  border: 3px solid orangered;
+  border: 3px solid rgb(122, 122, 255);
 }
 
 .cardss:nth-child(even) > .info > .title {
@@ -97,10 +94,4 @@
 
 .cardss:nth-child(even) > .info > .title::before {
   right: -45px;
-}
-
-@media (max-width: 767px) {
-  .cardss {
-    margin-left: 200px;
-  }
 }

@@ -1,6 +1,5 @@
 import "./App.css";
 import AnimatedCursor from "react-animated-cursor";
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Homepage from "./pages/Homepage/Homepage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -40,7 +39,6 @@ function App() {
           <Route path="/projects" Component={Projectspage} />
           <Route exact path="/" Component={Homepage} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );

@@ -22,21 +22,27 @@ const Homepage = () => {
       "https://www.freecodecamp.org/certification/rounit08/javascript-algorithms-and-data-structures";
   };
 
-  const handleClickSearch = () => {
+  const handleClickSearch = (e) => {
+    e.stopPropagation();
     setExpanded(true);
-    setPlaceholder("Rounit's Portfolio -> Look ");
+
+    setPlaceholder("Dive in ");
   };
 
   const searchBoxStyle = {
-    height: expanded ? "350px" : "50px",
+    height: expanded ? "150px" : "50px",
     transition: "width 0.3s ease",
     placeholder: "Search",
+    icon: {
+      visibility: expanded ? "hidden" : "visible",
+    },
   };
 
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (searchBoxRef.current && !searchBoxRef.current.contains(e.target)) {
         setExpanded(false);
+        console.log("click outside");
         setPlaceholder("Click here");
       }
     };
@@ -52,18 +58,13 @@ const Homepage = () => {
     backgroundColor: "transparent",
   };
 
+  console.log(expanded);
   return (
     <div className="home">
-      <br /> <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <h1 className="homeTitle">Rounit Sinha</h1>
       <div className="search" style={searchBoxStyle} ref={searchBoxRef}>
         <SearchIcon className="icon" />
-        <div className="expandeditems">
+        {/* <div className="expandeditems">
           <input
             autoFocus
             className="homeSearch"
@@ -92,7 +93,65 @@ const Homepage = () => {
               </button>
             </div>
           )}
-        </div>
+        </div> */}
+
+        {expanded ? (
+          <div className="searchResults">
+            <button className="search-button">
+              <Link style={linkstyle} to="/experience">
+                Experience
+              </Link>
+            </button>
+            <button className="search-button">
+              <Link style={linkstyle} to="/projects">
+                Projects
+              </Link>
+            </button>
+            <button
+              onClick={handleClickCertification}
+              className="search-button"
+            >
+              Certifications
+            </button>
+          </div>
+        ) : (
+          <input
+            className="home__input"
+            autoFocus
+            onClick={handleClickSearch}
+            type="text"
+            readOnly
+            placeholder={placeholder}
+          />
+        )}
+        {/* <input
+          className="home__input"
+          autoFocus
+          onClick={handleClickSearch}
+          type="text"
+          readOnly
+          placeholder={placeholder}
+        />
+        {expanded && (
+          <div className="searchResults">
+            <button className="search-button">
+              <Link style={linkstyle} to="/experience">
+                Experience
+              </Link>
+            </button>
+            <button className="search-button">
+              <Link style={linkstyle} to="/projects">
+                Projects
+              </Link>
+            </button>
+            <button
+              onClick={handleClickCertification}
+              className="search-button"
+            >
+              Certifications
+            </button>
+          </div>
+        )} */}
       </div>
       <div className="homeButton">
         <button onClick={handleClickResume}>Hire me!</button>

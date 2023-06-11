@@ -7,10 +7,10 @@ const Header = () => {
     <div className="header">
       <ul className="headerList">
         <a href="https://github.com/rounit08" target="_blank">
-          <li id="one">Github</li>
+          <li className="headerListGithub">Github</li>
         </a>
         <a href="https://dev.to/rounit08" target="_blank">
-          <li id="two">Blog</li>
+          <li className="headerListBlog">Blog</li>
         </a>
       </ul>
     </div>
