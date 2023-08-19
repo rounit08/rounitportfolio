@@ -8,6 +8,16 @@ function Experiencepage() {
         <div className="outer">
           <div className="cardss">
             <div className="info">
+              <h3 className="title">Frontend Intern @EVE Healthcares</h3>
+              <p>
+                * Developed the UI of search page and complete user booking
+                flow. * Writing tests for the production ready codes. (Jul 2023-
+                Present)
+              </p>
+            </div>
+          </div>
+          <div className="cardss">
+            <div className="info">
               <h3 className="title">
                 {" "}
                 Web developer @Shri Mata Vaishno Devi University

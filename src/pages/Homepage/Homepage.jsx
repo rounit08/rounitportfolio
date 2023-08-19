@@ -10,7 +10,7 @@ const Homepage = () => {
 
   const handleClickResume = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1Wn5eeJBK13HagYtSltwhJ1TDXf6-dBRU/view?usp=sharing";
+      "https://drive.google.com/file/d/1HP4-NDv2zkCLvy7ZKdsdlqWnV6KUOl37/view?usp=drive_link";
   };
 
   const handleClickLinkedIn = () => {
@@ -162,6 +162,9 @@ const Homepage = () => {
         <a target="_blank" href="https://www.linkedin.com/in/rounit08/">
           {" "}
           LinkedIn
+        </a>
+        <a target="_blank" href="https://cssbattle.dev/player/rounit08">
+          CSS Battle
         </a>
         <a target="_blank" href="https://github.com/rounit08">
           Github

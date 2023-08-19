@@ -4,8 +4,8 @@ import voici from "../../../images/voici.png";
 import tonedThreads from "../../../images/tonedthreads.jpeg";
 import frontendfighters from "../../../images/frontendfighters.png";
 import amazonclone from "../../../images/amazon.png";
-import infinitescroll from "../../../images/infinitescoll.png";
 import Card from "../../../sharedComponents/cards/Card";
+import Devwell from "../../../images/devu.png";
 import "./Projectspage.css";
 
 function Projectspage() {
@@ -52,18 +52,13 @@ function Projectspage() {
         buttonLink="https://github.com/rounit08/voici"
       />{" "}
       <Card
-        imageSrc={infinitescroll}
-        description="Discover an immersive browsing experience with 
-        this infinite scroll project, inspired by Instagram Reels
-         and popular shopping apps. 
-         Developed using React.js,
-          this dynamic component loads and displays content seamlessly 
-          as users scroll, providing an endless stream of engaging content. 
-          Leveraging React's state management and modern frontend techniques,
-           this project delivers a smooth and efficient user experience,
-            perfect for applications with extensive content libraries."
+        imageSrc={Devwell}
+        description="Boost Your Developer Lifestyle with DevWell: A chrome extension to maintain healthy 
+        lifestyle by reminding for exercise and water after every 90 mins. This works on the Chrome APIs with the help 
+        of which Devwell calulates and analyse if the active time on browser is 90 mins, then it will make a popup which has a water intake reminder and 
+        a simple exercise to do to maintain the physical health"
         buttonLabel="Repo"
-        buttonLink="https://github.com/rounit08/infinite-scroll"
+        buttonLink="https://github.com/rounit08/devwell"
       />
       <Card
         imageSrc={amazonclone}
