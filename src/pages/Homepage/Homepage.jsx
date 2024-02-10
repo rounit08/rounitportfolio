@@ -10,7 +10,7 @@ const Homepage = () => {
 
   const handleClickResume = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1cyfuofPwz7KZ87KQPN29gbYE83nCc6Ez/view?usp=drive_link";
+      "https://drive.google.com/file/d/1zU2Gb-kgoeWHJfqwisA0EbCqgST9xz3n/view?usp=sharing";
   };
 
   const handleClickLinkedIn = () => {
@@ -64,36 +64,6 @@ const Homepage = () => {
       <h1 className="homeTitle">Rounit Sinha</h1>
       <div className="search" style={searchBoxStyle} ref={searchBoxRef}>
         <SearchIcon className="icon" />
-        {/* <div className="expandeditems">
-          <input
-            autoFocus
-            className="homeSearch"
-            onClick={handleClickSearch}
-            type="text"
-            placeholder={placeholder}
-            readOnly
-          />
-          {expanded && (
-            <div className="searchResults">
-              <button className="search-button">
-                <Link style={linkstyle} to="/experience">
-                  Experience
-                </Link>
-              </button>
-              <button className="search-button">
-                <Link style={linkstyle} to="/projects">
-                  Projects
-                </Link>
-              </button>
-              <button
-                onClick={handleClickCertification}
-                className="search-button"
-              >
-                Certifications
-              </button>
-            </div>
-          )}
-        </div> */}
 
         {expanded ? (
           <div className="searchResults">
@@ -124,34 +94,6 @@ const Homepage = () => {
             placeholder={placeholder}
           />
         )}
-        {/* <input
-          className="home__input"
-          autoFocus
-          onClick={handleClickSearch}
-          type="text"
-          readOnly
-          placeholder={placeholder}
-        />
-        {expanded && (
-          <div className="searchResults">
-            <button className="search-button">
-              <Link style={linkstyle} to="/experience">
-                Experience
-              </Link>
-            </button>
-            <button className="search-button">
-              <Link style={linkstyle} to="/projects">
-                Projects
-              </Link>
-            </button>
-            <button
-              onClick={handleClickCertification}
-              className="search-button"
-            >
-              Certifications
-            </button>
-          </div>
-        )} */}
       </div>
       <div className="homeButton">
         <button onClick={handleClickResume}>Hire me!</button>
@@ -177,9 +119,6 @@ const Homepage = () => {
         </a>
         <a target="_blank" href="https://twitter.com/therounitsinha">
           Twitter
-        </a>
-        <a target="_blank" href="https://www.instagram.com/rounitcodes/">
-          Instagram
         </a>
       </div>
     </div>

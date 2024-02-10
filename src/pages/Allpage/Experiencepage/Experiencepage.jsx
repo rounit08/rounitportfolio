@@ -8,11 +8,21 @@ function Experiencepage() {
         <div className="outer">
           <div className="cardss">
             <div className="info">
+              <h3 className="title">SDE Intern @ZeStream</h3>
+              <p>
+                * Developing the interactive dashboard for the SaaS product.
+                Managing the hiring for new frontend techies * Writing tests for
+                the production ready codes. (Sep 2023- Present)
+              </p>
+            </div>
+          </div>
+          <div className="cardss">
+            <div className="info">
               <h3 className="title">Frontend Intern @EVE Healthcares</h3>
               <p>
                 * Developed the UI of search page and complete user booking
                 flow. * Writing tests for the production ready codes. (Jul 2023-
-                Present)
+                Sep 2023)
               </p>
             </div>
           </div>
