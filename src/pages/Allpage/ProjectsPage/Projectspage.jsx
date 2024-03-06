@@ -26,9 +26,9 @@ function Projectspage() {
       />{" "}
       <Card
         imageSrc={tonedThreads}
-        description="A product which helps you to find the best clothes for you all according to trend, Coming soon Stay Tuned"
+        description="tonedThreads is a platform designed to simplify the process of selecting trendy clothes online. It utilizes sophisticated filtering algorithms to cater to users of diverse demographics, ensuring that each user receives personalized clothing recommendations based on their preferences."
         buttonLabel="Repo"
-        // buttonLink="coming soon"
+        buttonLink="https://github.com/rounit08/tonedthreads"
       />{" "}
       <Card
         imageSrc={qrgen}
