@@ -2,6 +2,9 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Homepage.css";
 import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
+import LinkedinSVG from "../../svgs/LinkedinSVG";
+import GithubSVG from "../../svgs/GithubSVG";
+import SubstackSVG from "../../svgs/SubstackSVG";
 
 const Homepage = () => {
   const [expanded, setExpanded] = useState(false);
@@ -58,12 +61,11 @@ const Homepage = () => {
     backgroundColor: "transparent",
   };
 
-  console.log(expanded);
   return (
     <div className="home">
       <h1 className="homeTitle">Rounit Sinha</h1>
       <div className="search" style={searchBoxStyle} ref={searchBoxRef}>
-        <SearchIcon className="icon" />
+        {!expanded && <SearchIcon className="icon" />}
 
         {expanded ? (
           <div className="searchResults">
@@ -120,6 +122,28 @@ const Homepage = () => {
         <a target="_blank" href="https://twitter.com/therounitsinha">
           Twitter
         </a>
+      </div>
+
+      <div className="frontendfighters">
+        <span>Explore Frontend Fighters</span>
+        <div className="ffsocials">
+          <a href="https://www.linkedin.com/company/frontendfighters">
+            <div className="fflinkedin">
+              <LinkedinSVG />
+            </div>
+          </a>
+
+          <a href="https://github.com/rounit08/frontendfighters">
+            <div className="ffgithub">
+              <GithubSVG />
+            </div>
+          </a>
+          <a href="https://frontendfighters.substack.com/">
+            <div className="ffblog">
+              <SubstackSVG />
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -13,7 +13,27 @@
   position: relative;
   max-width: 400px;
 }
+.homebttn {
+  position: fixed;
+  color: white;
+  left: 0;
+  top: 0;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 99;
+  background: linear-gradient(to right, navy, #1d2024);
+  margin: 40px;
+  box-shadow: 1px 1px 5px #555, -1px -1px 5px #555;
+}
 
+.homebttn:hover {
+  background: #1d2024;
+  color: white;
+  border: 1px solid white;
+}
 .cardss:nth-child(odd) {
   padding: 30px 0 30px 30px;
 }

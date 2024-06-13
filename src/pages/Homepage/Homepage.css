@@ -77,6 +77,37 @@
   border: #e8eaed 1px solid;
 }
 
+.frontendfighters {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 5vh;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 1rem;
+  align-items: center;
+}
+
+.ffsocials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fflinkedin {
+  cursor: pointer;
+}
+.ffgithub {
+  cursor: pointer;
+}
+.ffblog {
+  cursor: pointer;
+}
+
 .icon {
   position: absolute;
   top: 7px;

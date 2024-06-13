@@ -1,11 +1,25 @@
 import React from "react";
 import "./Experiencepage.css";
+import { Link } from "react-router-dom";
 
 function Experiencepage() {
   return (
     <>
+      <Link to="/">
+        <div className="homebttn">Home</div>
+      </Link>
       <div className="timeline">
         <div className="outer">
+          <div className="cardss">
+            <div className="info">
+              <h3 className="title">SDE-1 @AppScrip</h3>
+              <p>
+                * Developing the UI for the SaaS product, Isometrik AI. *
+                Working with NextJS and TailwindCSS, also Strapi as a CMS . (Apr
+                2024- Present)
+              </p>
+            </div>
+          </div>
           <div className="cardss">
             <div className="info">
               <h3 className="title">SDE Intern @ZeStream</h3>

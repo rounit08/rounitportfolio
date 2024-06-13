@@ -1,26 +1,44 @@
 .projectComps {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  gap: 20px;
   background-color: #1d2024;
+  padding: 10px;
+}
+.homebtn {
+  position: fixed;
+  color: white;
+  left: 0;
+  bottom: 0;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(to right, navy, #1d2024);
+  margin: 40px;
+  box-shadow: 1px 1px 5px #555, -1px -1px 5px #555;
 }
 
+.homebtn:hover {
+  background: #1d2024;
+  color: white;
+  border: 1px solid white;
+}
+body {
+  background-color: #1d2024;
+  position: relative;
+}
 body::-webkit-scrollbar {
-  width: 8px; /* Width of the scrollbar */
+  width: 8px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color of the scrollbar thumb */
-  border-radius: 4px; /* Rounded corners for the thumb */
+  background-color: #888;
+  border-radius: 4px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Color of the scrollbar thumb on hover */
+  background-color: #555;
 }
-
-/* @media (min-width: 767px) {
-  .projectComps {
-    margin-left: 200px;
-  }
-} */

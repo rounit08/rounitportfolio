@@ -4,13 +4,24 @@ import voici from "../../../images/voici.png";
 import tonedThreads from "../../../images/tonedthreads.jpeg";
 import frontendfighters from "../../../images/frontendfighters.png";
 import amazonclone from "../../../images/amazon.png";
+import npmpackage from "../../../images/npm-logo.png";
 import Card from "../../../sharedComponents/cards/Card";
 import Devwell from "../../../images/devu.png";
 import "./Projectspage.css";
+import { Link } from "react-router-dom";
 
 function Projectspage() {
   return (
-    <div className="projectComps">
+    <div className="projectComps custom-container">
+      <div className="homebtn">
+        <Link to="/">Home </Link>
+      </div>
+      <Card
+        imageSrc={npmpackage}
+        buttonLabel="Live"
+        buttonLink="https://www.npmjs.com/package/react-flow-form"
+        description="This package provides a simple and customizable multistep form flow for React applications. It allows you to create multistep forms with ease, enabling users to navigate through different sections of the form smoothly."
+      />
       <Card
         imageSrc={frontendfighters}
         description="Welcome to my comprehensive frontend developer's repository, 
@@ -23,13 +34,13 @@ function Projectspage() {
            insights necessary to excel in the dynamic world of frontend development"
         buttonLabel="Repo"
         buttonLink="https://github.com/rounit08/frontendfighters"
-      />{" "}
+      />
       <Card
         imageSrc={tonedThreads}
         description="tonedThreads is a platform designed to simplify the process of selecting trendy clothes online. It utilizes sophisticated filtering algorithms to cater to users of diverse demographics, ensuring that each user receives personalized clothing recommendations based on their preferences."
         buttonLabel="Repo"
         buttonLink="https://github.com/rounit08/tonedthreads"
-      />{" "}
+      />
       <Card
         imageSrc={qrgen}
         description="QRGEN - A QR code generator project built using React.js,
@@ -50,7 +61,7 @@ function Projectspage() {
           real-time transcriptions. This project has a feature to save the note that converted using VOICI"
         buttonLabel="Repo"
         buttonLink="https://github.com/rounit08/voici"
-      />{" "}
+      />
       <Card
         imageSrc={Devwell}
         description="Boost Your Developer Lifestyle with DevWell: A chrome extension to maintain healthy 
